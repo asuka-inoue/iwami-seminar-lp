@@ -1,0 +1,96 @@
+@use "global" as *;
+
+.p-profile__inner {
+  padding-top: rem(70);
+  padding-bottom: rem(40);
+  text-align: center;
+  @include mq(md) {
+    padding-top: rem(114);
+    padding-bottom: rem(60);
+  }
+}
+
+.p-profile__img {
+  max-width: rem(250);
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    max-width: rem(350);
+  }
+}
+
+.p-profile__box {
+  display: inline-block;
+  margin-top: rem(20);
+  padding-bottom: rem(15);
+  border-bottom: #777777 3px solid;
+  @include mq(md) {
+    margin-top: rem(50);
+    padding-bottom: rem(23);
+    border-bottom: #777777 6px solid;
+  }
+}
+
+.p-profile__box-item {
+  font-weight: $bold2;
+  line-height: 1.74;
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(23);
+  }
+}
+
+.p-profile__name {
+  font-size: rem(25);
+  font-weight: $bold;
+  line-height: 1;
+  margin-top: rem(19);
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+
+.p-profile__name span {
+  font-weight: $regular;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.p-profile__text-box {
+  margin-top: rem(30);
+  padding: rem(15);
+  background: #f5f5f5;
+  box-shadow: 3px 3px 20px #00000029;
+  text-align: left;
+  @include mq(md) {
+    font-size: rem(20);
+    margin-top: rem(51);
+    display: flex;
+    justify-content: space-between;
+    padding: rem(50);
+  }
+}
+
+.p-profile__definition {
+  @include mq(md) {
+    max-width: rem(430);
+    width: 48%;
+  }
+}
+
+.p-profile__term {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(25);
+  }
+}
+
+.p-profile__text-block {
+  margin-top: rem(35);
+  text-align: left;
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+}

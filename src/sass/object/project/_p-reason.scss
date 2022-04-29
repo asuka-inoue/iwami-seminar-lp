@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.p-reason {
+  background: url(../images/common/bg-1.jpg);
+  background-size: cover;
+}
+
+.p-reason__inner {
+  padding-top: rem(60);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(80);
+  padding-bottom: rem(50);
+  }
+}
+
+.p-reason__img {
+  max-width: rem(405);
+  width: 100%;
+  margin: auto;
+}

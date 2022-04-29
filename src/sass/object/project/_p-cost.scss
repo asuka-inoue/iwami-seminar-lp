@@ -1,0 +1,106 @@
+@use "global" as *;
+
+.p-cost {
+  background: url(../images/common/bg-3.jpg);
+  background-size: cover;
+}
+
+.p-cost__inner {
+  padding-top: rem(50);
+  padding-bottom: rem(75);
+}
+
+.p-cost__title {
+  background: $black;
+  color: $white;
+  text-align: center;
+  font-size: rem(25);
+  font-weight: $bold2;
+  padding: rem(25);
+  @include mq(md) {
+    font-size: rem(34);
+  }
+}
+.p-cost__box {
+  background: $white;
+  padding: rem(20);
+  @include mq(md) {
+    padding: rem(20) rem(100);
+  }
+}
+
+.p-cost__cost {
+  text-align: center;
+  color: #2FB1A7;
+  font-size: rem(50);
+  font-family: $second-font;
+  line-height: 1;
+  @include mq(md) {
+    font-size: rem(70);
+  }
+}
+
+.p-cost__yen {
+  font-family: $base-font;
+  font-size: rem(25);
+  font-weight: $bold2;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.p-cost__tax {
+  color: $red;
+  font-size: rem(20);
+  font-family: $base-font;
+  font-weight: $bold2;
+  @include mq(md) {
+    font-size: rem(30);
+  }
+}
+
+.p-cost__text-block {
+  margin-top: rem(25);
+}
+
+.p-cost__text {
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.p-cost__under-line {
+  border-bottom: 1px solid $black;
+}
+
+.p-cost__block-title {
+  position: relative;
+  font-size: rem(20);
+  font-weight: $bold;
+  padding-left: rem(20);
+  @include mq(md) {
+    font-size: rem(30);
+    padding-left: rem(25);
+  }
+}
+
+.p-cost__block-title::before {
+  position: absolute;
+  content: "";
+  width: rem(10);
+  height: 100%;
+  background: $black;
+  left: 0;
+  @include mq(md) {
+    width: rem(15);
+  }
+}
+
+.p-cost__text--margin {
+  margin-top: rem(10);
+  margin-left: rem(20);
+  @include mq(md) {
+    margin-left: rem(25);
+  }
+}

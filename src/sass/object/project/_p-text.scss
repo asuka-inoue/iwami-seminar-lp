@@ -1,0 +1,94 @@
+@use "global" as *;
+
+.p-text__bold {
+  font-weight: $bold2;
+}
+
+.p-text__light-bold {
+  font-weight: $bold;
+}
+
+.p-text__text {
+  color: $black;
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(20);
+    
+  }
+}
+
+.p-text__large {
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(23);
+  }
+}
+
+.p-text__big {
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(25);
+  }
+}
+
+
+.p-text__lists {
+  padding: rem(14) 0 rem(20) rem(20);
+}
+
+.p-text__list {
+  position: relative;
+  font-size: rem(20);
+  font-weight: $bold2;
+  padding-left: rem(25);
+  @include mq(md) {
+    font-size: rem(23);
+    padding-left: rem(45);
+  }
+}
+
+.p-text__list + .p-text__list {
+  margin-top: rem(8);
+}
+
+.p-text__list::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/icon-mark.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(25);
+  height: rem(25);
+  left: rem(-3);
+  top: rem(3);
+  @include mq(md) {
+    width: rem(35);
+    height: rem(41);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.p-text__line {
+  background: linear-gradient(transparent 50%, $yellow 50%);
+}
+
+.p-text__line-white {
+  background: linear-gradient(transparent 50%, $white 50%);
+}
+
+.p-text__green {
+  color: #2fb1a7;
+}
+
+.p-text__red {
+  color: $red;
+}
+
+.p-text__name {
+  text-align: right;
+  margin-top: rem(10);
+  font-weight: $bold;
+  font-size: rem(23);
+}

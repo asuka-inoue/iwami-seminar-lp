@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.p-ps {
+  background: url(../images/common/bg-4.jpg);
+  background-size: cover;
+}
+
+.p-ps__inner {
+  padding-top: rem(80);
+  padding-bottom: rem(50);
+  @include mq(md) {
+    padding-top: rem(105);
+  }
+}

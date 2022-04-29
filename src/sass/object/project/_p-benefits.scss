@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.p-benefits {
+  background: #EEEEEE;
+}
+
+.p-benefits__inner {
+  padding-top: rem(170);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(288);
+    padding-bottom: rem(50);
+  }
+}
+
+.p-benefits__lists {
+  position: relative;
+  background: $white;
+  padding: rem(55) rem(15) rem(30);
+  @include mq(md) {
+    padding: rem(55) rem(30);
+  }
+}
+
+.p-benefits__lists::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/illust-6.png) no-repeat;
+  background-size: contain;
+  width: rem(200);
+  height: rem(383);
+  top: rem(-123);
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq(md) {
+    width: rem(320);
+    top: rem(-223);
+  }
+}
+
+.p-benefits__list {
+  position: relative;
+  font-size: rem(20);
+  font-weight: $bold2;
+  padding-left: rem(40);
+  @include mq(md) {
+    font-size: rem(23);
+    padding-left: rem(55);
+  }
+}
+
+.p-benefits__list::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/icon-check.svg) no-repeat;
+  background-size: contain;
+  width: rem(30);
+  height: rem(27);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  @include mq(md) {
+    width: rem(40);
+    height: rem(37);
+  }
+}
+
+.p-benefits__list + .p-benefits__list {
+  margin-top: rem(30);
+}

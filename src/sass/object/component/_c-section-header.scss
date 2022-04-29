@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.c-section-header {
+  position: relative;
+  background: $black;
+  padding-top: rem(23);
+  text-align: center;
+}
+
+.c-section-header::before,
+.c-section-header::after {
+  position: absolute;
+  content: "";
+  bottom: rem(-36);
+}
+
+.c-section-header::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50vw 37px 0;
+  border-color: transparent $black transparent transparent;
+  left: 0;
+}
+
+.c-section-header::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 37px 50vw 0 0;
+  border-color: $black transparent transparent transparent;
+  right: 0;
+}
+
+.c-section-header__title {
+  position: relative;
+  display: inline-block;
+  color: $white;
+  font-size: rem(25);
+  font-weight: $bold2;
+  line-height: 1.47;
+  z-index: 1;
+  @include mq(md) {
+    font-size: rem(34);
+  }
+}
+
+.c-section-header__title br {
+  line-height: 0;
+}
+
+.c-section-header__title span {
+  color: $red;
+}
+
+.c-section-header__big {
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}

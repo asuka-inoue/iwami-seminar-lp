@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.p-contents__inner {
+  padding-top: rem(105);
+  padding-bottom: rem(50);
+}
+
+.p-contents__box {
+  position: relative;
+  background: #feefcd;
+  box-shadow: 0px 10px 15px #00000029;
+  font-weight: $bold;
+}
+
+.p-contents__box-inner {
+  padding: 0 rem(15) rem(30);
+  @include mq(md) {
+    padding: 0 rem(100) rem(30);
+  }
+}
+
+.p-contents__box + .p-contents__box {
+  margin-top: rem(50);
+}
+
+.p-contents__box-title {
+  font-size: rem(23);
+  color: $red;
+  background: url(../images/common/contents.png) no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  padding: rem(10) rem(50) rem(10) rem(10);
+  display: flex;
+  @include mq(md) {
+    font-size: rem(30);
+    display: inline-block;
+    padding: rem(10) rem(70) rem(10) rem(30);
+  }
+}
+
+.p-contents__box-title span {
+  position: relative;
+  color: $black;
+  padding-right: rem(35);
+  @include mq(md) {
+    padding-right: rem(48);
+  }
+}
+
+.p-contents__box-title span::after {
+  content: "";
+  position: absolute;
+  width: rem(3);
+  height: 100%;
+  background: $black;
+  right: rem(18);
+  @include mq(md) {
+    right: rem(24);
+  }
+}
+
+.p-contents__box:nth-child(1) .p-contents__img {
+  max-width: rem(461);
+  width: 100%;
+  margin: auto;
+}
+
+.p-contents__box:nth-child(2) .p-contents__img {
+  max-width: rem(426);
+  width: 100%;
+  margin: auto;
+}
+
+.p-contents__box:nth-child(3) .p-contents__img {
+  max-width: rem(554);
+  width: 100%;
+  margin: auto;
+}
+
+.p-contents__text-block {
+  max-width: rem(800);
+  width: 100%;
+  margin: auto;
+  
+}
