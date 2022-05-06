@@ -684,6 +684,10 @@ select::-ms-expand {
   }
 }
 
+.p-cv__btn a {
+  display: block;
+}
+
 .p-date__inner {
   padding-top: 50px;
   padding-top: 3.125rem;
