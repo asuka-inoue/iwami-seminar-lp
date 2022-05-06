@@ -1,0 +1,88 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.p-recommendation {
+  background: url(../images/common/bg-2.jpg);
+  background-size: cover;
+}
+
+.p-recommendation__inner {
+  padding-top: 60px;
+  padding-top: 3.75rem;
+  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-recommendation__inner {
+    padding-top: 6.25rem;
+    padding-bottom: 3.125rem;
+  }
+}
+
+.p-recommendation__lists {
+  padding: 0 15px;
+  padding: 0 0.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-recommendation__lists {
+    padding: 0 1.875rem;
+  }
+}
+
+.p-recommendation__list {
+  position: relative;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 900;
+  padding-left: 40px;
+  padding-left: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-recommendation__list {
+    font-size: 1.4375rem;
+    padding-left: 3.4375rem;
+  }
+}
+
+.p-recommendation__list::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/icon-check.svg) no-repeat;
+  background-size: contain;
+  width: 30px;
+  width: 1.875rem;
+  height: 27px;
+  height: 1.6875rem;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .p-recommendation__list::before {
+    width: 2.5rem;
+    height: 2.3125rem;
+  }
+}
+
+.p-recommendation__list + .p-recommendation__list {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+/*# sourceMappingURL=p_recommendation.css.map */

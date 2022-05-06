@@ -650,16 +650,38 @@ select::-ms-expand {
   }
 }
 
-.p-cv__btn {
-  text-align: center;
-  margin-top: 16px;
-  margin-top: 1rem;
+@media screen and (min-width: 768px) {
+  .p-cv__btn-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.p-cv__btn button {
+.p-cv__btn {
+  margin-top: 16px;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  max-width: 18.75rem;
+  width: 100%;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="1" dy="13" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.3)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
   -webkit-filter: drop-shadow(0px 12px 10px rgba(0, 0, 0, .3));
           filter: drop-shadow(0px 12px 10px rgba(0, 0, 0, .3));
+}
+@media screen and (min-width: 768px) {
+  .p-cv__btn {
+    margin-left: 0;
+    margin-right: 1rem;
+    max-width: 29.625rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-cv__btn:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .p-date__inner {
