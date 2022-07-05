@@ -650,12 +650,9 @@ select::-ms-expand {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .p-cv__btn-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.p-cv__btn-wrap {
+  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .p-cv__btn {
@@ -672,15 +669,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-cv__btn {
-    margin-left: 0;
-    margin-right: 1rem;
     max-width: 29.625rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-cv__btn:last-of-type {
-    margin-right: 0;
+    margin-top: 1.875rem;
   }
 }
 
